@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AROMA Fine Dine Restaurant & Banquet Hall</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f8f8f8;
+    color:#333;
+    line-height:1.6;
+}
+
+/* Header */
+header{
+    background:#111;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 8%;
+}
+
+.logo{
+    color:#ff9800;
+    font-size:30px;
+    font-weight:bold;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+nav ul li a:hover{
+    color:#ff9800;
+}
+
+/* Hero */
+.hero{
+    height:90vh;
+    background:
+    linear-gradient(rgba(0,0,0,0.6),
+    rgba(0,0,0,0.6)),
+    url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1600');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.hero-content h1{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:22px;
+    margin-bottom:25px;
+}
+
+.btn{
+    background:#ff9800;
+    color:white;
+    text-decoration:none;
+    padding:12px 25px;
+    border-radius:5px;
+    font-weight:bold;
+}
+
+.btn:hover{
+    background:#e68900;
+}
+
+/* Sections */
+section{
+    padding:80px 10%;
+}
+
+section h2{
+    text-align:center;
+    margin-bottom:30px;
+    color:#ff9800;
+    font-size:35px;
+}
+
+/* About */
+.about{
+    text-align:center;
+}
+
+/* Menu */
+.menu-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.menu-item{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    text-align:center;
+    box-shadow:0 3px 10px rgba(0,0,0,0.1);
+}
+
+.menu-item h3{
+    margin-bottom:10px;
+}
+
+/* Gallery */
+.gallery-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+}
+
+.gallery-container img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:10px;
+    transition:0.4s;
+    box-shadow:0 3px 10px rgba(0,0,0,0.2);
+}
+
+.gallery-container img:hover{
+    transform:scale(1.05);
+}
+
+/* Services */
+.services-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.service-box{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    text-align:center;
+    box-shadow:0 3px 10px rgba(0,0,0,0.1);
+}
+
+/* Contact */
+.contact{
+    background:white;
+    border-radius:10px;
+    padding:30px;
+    text-align:center;
+}
+
+.contact p{
+    margin:10px 0;
+}
+
+/* Footer */
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* Mobile */
+@media(max-width:768px){
+
+    nav{
+        flex-direction:column;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+        margin-top:10px;
+    }
+
+    nav ul li{
+        margin:10px;
+    }
+
+    .hero-content h1{
+        font-size:38px;
+    }
+
+    .hero-content p{
+        font-size:18px;
+    }
+}
+</style>
+
+</head>
+<body>
+
+<header>
+    <nav>
+        <div class="logo">AROMA</div>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <div class="hero-content">
+        <h1>AROMA Fine Dine Restaurant</h1>
+        <p>Delicious Food • Family Dining • Special Celebrations</p>
+        <a href="#menu" class="btn">Explore Menu</a>
+    </div>
+</section>
+
+<section id="about">
+    <h2>About Us</h2>
+
+    <div class="about">
+        <p>
+            AROMA Fine Dine Restaurant & Banquet Hall is one of the
+            most popular dining destinations in Hanamkonda.
+            We provide delicious Indian, Chinese, Vegetarian,
+            and Non-Vegetarian dishes in a comfortable
+            family-friendly atmosphere.
+        </p>
+    </div>
+</section>
+
+<section id="menu">
+    <h2>Popular Dishes</h2>
+
+    <div class="menu-container">
+
+        <div class="menu-item">
+            <h3>Chicken Biryani</h3>
+            <p>₹250</p>
+        </div>
+
+        <div class="menu-item">
+            <h3>Mutton Biryani</h3>
+            <p>₹350</p>
+        </div>
+
+        <div class="menu-item">
+            <h3>Paneer Butter Masala</h3>
+            <p>₹220</p>
+        </div>
+
+        <div class="menu-item">
+            <h3>Veg Fried Rice</h3>
+            <p>₹180</p>
+        </div>
+
+        <div class="menu-item">
+            <h3>Chicken Noodles</h3>
+            <p>₹200</p>
+        </div>
+
+        <div class="menu-item">
+            <h3>Ice Cream Special</h3>
+            <p>₹120</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="gallery">
+    <h2>Gallery</h2>
+
+    <div class="gallery-container">
+
+        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800" alt="Restaurant">
+
+        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800" alt="Food">
+
+        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800" alt="Dining">
+
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800" alt="Dish">
+
+        <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=800" alt="Interior">
+
+        <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?w=800" alt="Banquet">
+
+    </div>
+</section>
+
+<section id="services">
+    <h2>Our Services</h2>
+
+    <div class="services-container">
+
+        <div class="service-box">
+            <h3>Family Dining</h3>
+            <p>Comfortable dining experience for families.</p>
+        </div>
+
+        <div class="service-box">
+            <h3>Banquet Hall</h3>
+            <p>Perfect venue for birthdays and celebrations.</p>
+        </div>
+
+        <div class="service-box">
+            <h3>Takeaway</h3>
+            <p>Quick and convenient food pickup service.</p>
+        </div>
+
+        <div class="service-box">
+            <h3>Group Events</h3>
+            <p>Corporate meetings and special occasions.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+
+    <div class="contact">
+        <p><strong>Phone:</strong> +91 73311 22436</p>
+
+        <p><strong>Address:</strong><br>
+        Lopamudra Arcade Mall,<br>
+        Above Reliance Trends,<br>
+        Naim Nagar, Hanamkonda, Telangana 506009</p>
+
+        <p><strong>Opening Hours:</strong><br>
+        11:30 AM – 11:30 PM</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 AROMA Fine Dine Restaurant & Banquet Hall. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
