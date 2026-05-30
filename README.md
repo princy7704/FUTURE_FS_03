@@ -15,10 +15,7 @@ The website is designed to improve the restaurant's online presence and provide 
 * About Section
 * Menu Section
 * Gallery Section
-* Customer Reviews
 * Contact Information
-* Mobile-Friendly Layout
-* Modern User Interface
 
 ---
 
@@ -69,23 +66,6 @@ AROMA-Restaurant-Website/
 ├── style.css
 ├── script.js
 └── README.md
-```
-
-## Live Demo
-
-Add your GitHub Pages link here:
-
-```text
-https://yourusername.github.io/aroma-restaurant-website/
-```
-
-## GitHub Repository
-
-Add your repository link here:
-
-```text
-https://github.com/yourusername/aroma-restaurant-website
-```
 
 ## Author
 
